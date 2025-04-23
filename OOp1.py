@@ -11,5 +11,5 @@ class employee:
 
 
 E1=employee()
-print(E1.name)
-E1.travel("Jaypur")
+# print(E1.name)
+# E1.travel("Jaypur")
