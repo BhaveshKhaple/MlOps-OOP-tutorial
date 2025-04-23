@@ -4,6 +4,7 @@ class chatbook:
         self.passsword=''
         self.loggedin=False
         self.menu()
+        # self.signup()
 
 
     def menu(self):
@@ -14,7 +15,7 @@ class chatbook:
                          4. Press 4 to message a friend 
                          5. Press any other to exit""")
         if user_input == "1":
-            pass                         
+            self.signup()                        
         elif user_input == "2":
             pass                         
         elif user_input == "3":
@@ -23,6 +24,20 @@ class chatbook:
             pass                         
         else:
             exit()
+
+    def signup(self):
+        email=input("Enter your mail ->")
+        password=input("Enter your pass->")
+        self.username= email
+        self.password=password
+        print("You had succesfulyy signed up on chat book")
+        print("\n")
+        self.menu()
+
+
+
+
+
 
 
 obj1=chatbook()                  
