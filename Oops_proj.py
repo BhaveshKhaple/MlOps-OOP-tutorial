@@ -11,13 +11,13 @@ class chatbook:
         user_input=input("""Welcome to chatbook!! How would you like to proceed
                          1. Press 1 to signup
                          2. Press 2 to signin
-                         3. Press to 3 tp Write a post
+                         3. Press to 3 to Write a post
                          4. Press 4 to message a friend 
                          5. Press any other to exit""")
         if user_input == "1":
             self.signup()                        
         elif user_input == "2":
-            pass                         
+            self.signin()                         
         elif user_input == "3":
             pass                         
         elif user_input == "4":
@@ -27,12 +27,30 @@ class chatbook:
 
     def signup(self):
         email=input("Enter your mail ->")
-        password=input("Enter your pass->")
+        pwd=input("Enter your pass->")
         self.username= email
-        self.password=password
+        self.password=pwd
         print("You had succesfulyy signed up on chat book")
         print("\n")
         self.menu()
+
+
+
+    def signin(self):
+        if self.username =='' and self.passsword =='':
+            print("Please signup by presssing 1 in menu")
+        else:
+            uname=input("ENter user name here->")
+            pwd=input("ENter password name here->")
+            if self.username==uname and self.passsword==pwd:
+                print("You successfully signed in")
+                print("\n")
+                self.loggedin= True
+            else:
+                print("Enter correct credintial")
+            
+
+
 
 
 
