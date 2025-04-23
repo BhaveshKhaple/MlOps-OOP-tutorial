@@ -6,5 +6,10 @@ class employee:
         self.id="123"
         self.designation="DA"
 
+    def travel(self,destination):
+        print(f'The empolyee tarveling through {destination}')
+
+
 E1=employee()
 print(E1.name)
+E1.travel("Jaypur")
