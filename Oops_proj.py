@@ -7,6 +7,15 @@ class chatbook:
         # self.signup()
 
 
+
+    def get_name(self):
+        return self.__username
+    
+
+    def set_name(self,value):
+        self.__username = value 
+
+
     def menu(self):
         user_input=input("""Welcome to chatbook!! How would you like to proceed
                          1. Press 1 to signup
