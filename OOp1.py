@@ -13,3 +13,6 @@ class employee:
 E1=employee()
 # print(E1.name)
 # E1.travel("Jaypur")
+
+E1.name="Khaple"
+print(E1.name)
